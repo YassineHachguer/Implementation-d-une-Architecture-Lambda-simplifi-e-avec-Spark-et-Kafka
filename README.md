@@ -10,8 +10,7 @@
   - [1. Batch Layer](#1-batch-layer)
   - [2. Speed Layer (Streaming)](#2-speed-layer-streaming)
   - [3. Serving Layer](#3-serving-layer)
-- [Commandes utiles](#commandes-utiles)
-- [Troubleshooting](#troubleshooting)
+
 
 ---
 
@@ -33,32 +32,7 @@ Cet atelier implémente une **Lambda Architecture** complète avec :
 
 ##  Architecture
 
-```
-                    Lambda Architecture
-                    
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│  Données Historiques          Données Temps Réel       │
-│         ↓                              ↓                │
-│   ┌──────────┐                  ┌──────────┐           │
-│   │  HDFS    │                  │  Kafka   │           │
-│   └────┬─────┘                  └────┬─────┘           │
-│        ↓                              ↓                 │
-│   ┌──────────┐                  ┌──────────┐           │
-│   │  Batch   │                  │ Speed    │           │
-│   │  Layer   │                  │ Layer    │           │
-│   │  (Spark) │                  │ (Spark)  │           │
-│   └────┬─────┘                  └────┬─────┘           │
-│        ↓                              ↓                 │
-│        └──────────┬───────────────────┘                │
-│                   ↓                                     │
-│            ┌──────────────┐                            │
-│            │   Serving    │                            │
-│            │    Layer     │                            │
-│            └──────────────┘                            │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+![img_19.jpg](images/img_19.jpg)
 
 ---
 
