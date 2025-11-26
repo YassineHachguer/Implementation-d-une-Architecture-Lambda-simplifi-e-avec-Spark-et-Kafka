@@ -1,6 +1,6 @@
-# 🚀 Atelier Lambda Architecture avec Spark, Kafka et Hadoop
+#  Atelier Lambda Architecture avec Spark, Kafka et Hadoop
 
-## 📋 Table des matières
+##  Table des matières
 
 - [Introduction](#introduction)
 - [Architecture](#architecture)
